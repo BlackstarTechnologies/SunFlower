@@ -1,5 +1,7 @@
 TODO:
+    0. CRUD Session
     1. CRUD User
     2. CRUD Store
-    3. CRUD Contract
-    4. CRUD Promises
+    3. CRUD Items
+    4. CRUD Contract
+    5. CRUD Promises

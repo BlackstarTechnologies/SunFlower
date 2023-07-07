@@ -5,15 +5,13 @@ import React from "react";
 
 export const metadata = {
   title: "SunFlower",
-  description: "MAke your money work for you",
+  description: "Make your money work for you",
 };
 
 function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

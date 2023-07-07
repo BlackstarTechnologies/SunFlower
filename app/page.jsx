@@ -1,7 +1,13 @@
-import React from "react"
+import Nav from "@components/Nav";
+import React from "react";
 
-export default function Home(){
-    return ( <div>
+export default function Base() {
+  return (
+    <section className="w-full flex-center flex-col ">
+      <main className="App">
+        <Nav />
         Hello World
-    </div>)
+      </main>
+    </section>
+  );
 }

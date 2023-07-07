@@ -4,10 +4,27 @@
     height: 100vh;
     width:100vh;
     min-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
     
 }
 
-
-.Nav {
-    @apply sticky bg-[green] justify-center flex items-center;
+.bgtheme-green {
+    background-color: rgba(94, 247, 94, 0.822);
 }
+
+
+.flex-center{
+ @apply flex items-center justify-center
+}
+
+#Nav{
+    @apply absolute bottom-0  w-full flex-center pt-1 pb-1 border-t-2
+}
+#Header{
+    @apply  absolute top-0 flex-center  w-full pt-2 pb-2 bgtheme-green
+}
+

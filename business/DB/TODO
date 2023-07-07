@@ -1,0 +1,10 @@
+TODO:
+  1. models:
+    - user auth
+    - user profile
+      - subscriptions
+      - transaction history
+      - balance
+      - assets
+      - liabilities
+    - contracts

@@ -1,3 +1,5 @@
 @import "./sub/_tailwind.css";
 @import "./fontawesome6/css/all.min.css";
 @import "./sub/_root.css";
+
+@import "./sub/_home.css";

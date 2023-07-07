@@ -22,7 +22,8 @@
 }
 
 #Nav{
-    @apply absolute bottom-0  w-full flex-center pt-1 pb-1 border-t-2
+    @apply absolute bottom-0  w-full flex-center pt-1 pb-1 border-t-2;
+    justify-content: space-evenly;
 }
 #Header{
     @apply  absolute top-0 flex-center  w-full pt-2 pb-2 bgtheme-green

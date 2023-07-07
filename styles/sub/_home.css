@@ -1,0 +1,9 @@
+
+.bgtheme-green {
+    background-color: rgba(94, 247, 94, 0.822); 
+}
+
+.new_contract_button{
+    @apply bgtheme-green p-2 rounded absolute bottom-10 right-2 ;
+    
+}

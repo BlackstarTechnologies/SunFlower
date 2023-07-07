@@ -1,13 +1,10 @@
-import Nav from "@components/Nav";
+"use client";
+
+import { useRouter } from "next/navigation";
 import React from "react";
 
 export default function Base() {
-  return (
-    <section className="w-full flex-center flex-col ">
-      <main className="App">
-        <Nav />
-        Hello World
-      </main>
-    </section>
-  );
+  const router = useRouter();
+  router.push("/home");
+  return <div>Hello World</div>;
 }

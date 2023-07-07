@@ -19,22 +19,22 @@ function Nav(props) {
   return (
     <div id="Nav">
       {/* Home Feed */}
-      <Link href="/">
+      <Link href="/home">
         <i className="fa-solid fa-house"></i>
       </Link>
 
       {/* Search */}
-      <Link href="/">
+      <Link href="/search">
         <i className="fa-solid fa-magnifying-glass"></i>
       </Link>
 
       {/* Notifications */}
-      <Link href="/">
+      <Link href="/notifications">
         <i className="fa-regular fa-bell"></i>
       </Link>
 
       {/* Direct Messages */}
-      <Link href="/">
+      <Link href="/message">
         <i className="fa-regular fa-envelope"></i>
       </Link>
     </div>

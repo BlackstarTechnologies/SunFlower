@@ -1,4 +1,4 @@
-import { Page_ } from "@components/subcomponents/PageBase";
+import Page_ from "@components/subcomponents/PageBase";
 import React from "react";
 
 function NewContractButton(props) {

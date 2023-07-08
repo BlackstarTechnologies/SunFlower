@@ -43,10 +43,11 @@ function Nav(props) {
 
 export default function Page_({ children }) {
   return (
-    <section className="w-full flex-center flex-col ">
+    <section className="w-full flex-center flex-col  ">
       <main className="App">
         <Header />
-        {children}
+        <div className="Body">{children}</div>
+
         <Nav />
       </main>
     </section>

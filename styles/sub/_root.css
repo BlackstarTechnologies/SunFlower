@@ -1,4 +1,6 @@
 
+
+
 .App{
     position: relative;
     height: 100vh;
@@ -10,11 +12,13 @@
     justify-content: center;
     overflow-x: hidden;
     
+    max-width: 500px;
+    background-color: whitesmoke;
 }
 
 .bgtheme-green {
     background-color: rgba(94, 247, 94, 0.822);
-}
+} 
 
 
 .flex-center{
@@ -29,3 +33,6 @@
     @apply  absolute top-0 flex-center  w-full pt-2 pb-2 bgtheme-green
 }
 
+.Body{
+    @apply relative h-full min-h-[80vh] min-w-full mt-[2rem] p-2;
+}

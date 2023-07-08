@@ -1,3 +1,4 @@
+import Feed from "@components/home/Feed";
 import Page_ from "@components/subcomponents/PageBase";
 import React from "react";
 
@@ -12,9 +13,10 @@ function NewContractButton(props) {
 export default function Home() {
   return (
     <Page_>
-      <div className="relative h-full min-h-[80vh] min-w-full mt-[2rem]">
+      <div id="Home">
         <NewContractButton />
         Home
+        <Feed />
       </div>
     </Page_>
   );

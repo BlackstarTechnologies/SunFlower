@@ -3,7 +3,12 @@
     background-color: rgba(94, 247, 94, 0.822); 
 }
 
+#Home {
+    
+}
+
 .new_contract_button{
-    @apply bgtheme-green p-2 rounded absolute bottom-10 right-2 ;
+    @apply bgtheme-green p-2 h-[40px] w-[40px] rounded-full absolute bottom-10 right-2  ;
+    @apply flex items-center justify-center
     
 }

@@ -1,4 +1,8 @@
 export const FormInput = ({ formik, label, type, name }) => {
+  const handleChange = (e) => {
+    let v = e.target.value;
+    formik[name] = v;
+  };
   return (
     <div className="FormInput m-auto flex">
       <label htmlFor={name} className="">
@@ -8,9 +12,9 @@ export const FormInput = ({ formik, label, type, name }) => {
         id={name}
         name={name}
         type={type}
-        onChange={formik.handleChange}
-        value={formik.values.password}
-        className="m-2"
+        onChange={handleChange}
+        value={formik[name]}
+        className="border-2 rounded mx-4 "
       />
     </div>
   );

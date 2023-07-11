@@ -6,11 +6,20 @@ import {
 } from "@components/subcomponents/FormComponents";
 import React, { useRef } from "react";
 
-const POST = (val) => {
-  fetch("/api/auth/helloworld", {
-    method: "POST",
-    body: val,
-  });
+const postData = async (val) => {
+  try {
+    return await fetch("/api/auth/helloworld", {
+      method: "POST",
+      body: JSON.stringify(val),
+    })
+      .then((res) => res.json())
+      .then((v) => {
+        console.log(v);
+        return v;
+      });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export default function LogIn() {
@@ -19,9 +28,8 @@ export default function LogIn() {
   let formik = {};
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e);
     console.log(formik);
-    console.log(ref);
+    postData(formik);
   };
   return (
     <FormSection>
